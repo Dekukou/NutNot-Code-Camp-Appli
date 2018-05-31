@@ -1,0 +1,20 @@
+<ion-navbar hideBackButton *navbar>
+
+</ion-navbar>
+<ion-content id="content" style="overflow: scroll">
+  <div id="chat">
+        <div  *ngFor="let mess of messages" style="overflow: scroll"> 
+          <div id='chatbulle' class={{mess[1]}}>{{ mess[0] }}</div>
+        </div>
+  </div>
+</ion-content>  
+<ion-footer>
+    <ion-toolbar>
+      <form>
+        <div id="footer" style="position: sticky; bottom: 0;">
+          <div class="elem"><ion-input placeholder="Entrer votre message" [(ngModel)]="answer" name="test"></ion-input></div>
+          <div class="elem"><button ion-button on-tap="setMessage()">Envoyer</button></div>
+        </div>
+      </form>
+    </ion-toolbar>
+  </ion-footer>

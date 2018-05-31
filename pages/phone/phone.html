@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+        Phone
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-header hideBackButton *navbar  >
+    <ion-navbar>
+        <ion-title>
+        Login
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-item>
+        <ion-label floating>Téléphone</ion-label>
+        <ion-input [(ngModel)]="phone"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <button ion-button large id="connect" (tap)="insertCode()">Envoyer</button>
+    </ion-item>
+    </ion-content>

@@ -1,0 +1,35 @@
+page-chat {
+    #content {
+        background-color: lightgrey;
+    }
+
+    div#footer div.elem:first-child {
+        flex-grow: 1;
+      }
+    
+      div#footer {
+        display: flex;
+        flex-direction: row;
+      }
+      div#chatbulle {
+          margin: 10px;
+        padding: 10px;
+        border-radius: 7px;
+        
+        position: relative;
+          width: 200px;
+          height: auto;
+          color: white;
+          box-shadow: 5px 7px 8px rgba(30, 30, 30, 0.35);
+
+      }
+
+      div.left {
+        background-color: darkcyan;
+        float: left;
+      }
+      div.right {
+        background-color: #4bdd02   ;
+        float: right;
+      }
+}
